@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-weight: 600;
+  font-family: "Great Vibes", cursive;
+  background: rgb(255, 188, 188);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 188, 188, 1) 0%,
+    rgba(197, 241, 232, 1) 49%,
+    rgba(226, 255, 207, 1) 100%,
+    rgba(249, 216, 151, 1) 100%
+  );
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 60vh;
+  margin: auto;
+}
+h1 {
+  margin: 1.5rem;
+  text-align: center;
+}
+input {
+  border: rgb(96, 188, 250) solid 2px;
+  border-radius: 10px;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  background-color: rgb(118, 193, 255);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(59, 148, 221);
+}
+.lucky,
+.birthday {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+.output {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
