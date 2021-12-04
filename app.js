@@ -7,16 +7,20 @@ let splitDate = [];
 
 checkBtn.addEventListener("click", function () {
   let sumOfDate = 0;
-  if (luckyNumber.value) {
-    splitDate = DobInput.value.split("");
-    NumDate(splitDate);
-    for (let i = 0; i < splitDate.length; i++) {
-      sumOfDate += Number(splitDate[i]);
+  if (DobInput.value) {
+    if (luckyNumber.value) {
+      splitDate = DobInput.value.split("");
+      NumDate(splitDate);
+      for (let i = 0; i < splitDate.length; i++) {
+        sumOfDate += Number(splitDate[i]);
+      }
+      let lucky = sumOfDate % luckyNumber.value === 0;
+      updateMsg(lucky);
+    } else {
+      showerror("Enter your Lucky Number");
     }
-    let lucky = sumOfDate % luckyNumber.value === 0;
-    updateMsg(lucky);
   } else {
-    showerror("Enter your Lucky Number");
+    showerror("Enter your Birthday");
   }
 });
 
